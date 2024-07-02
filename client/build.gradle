@@ -17,6 +17,9 @@ dependencies {
     implementation project(path: ":${rootProject.name}-spi", configuration: 'shadow')
     implementation project(path: ":${rootProject.name}-common", configuration: 'shadow')
     compileOnly group: 'org.opensearch', name: 'opensearch', version: "${opensearch_version}"
+    implementation 'org.opensearch.client:opensearch-java:2.8.1'
+    implementation 'org.apache.httpcomponents.client5:httpclient5:5.2.1'
+    implementation 'org.opensearch.client:opensearch-rest-client:2.4.0'
     testImplementation group: 'junit', name: 'junit', version: '4.13.2'
     testImplementation group: 'org.mockito', name: 'mockito-core', version: '5.7.0'
 
